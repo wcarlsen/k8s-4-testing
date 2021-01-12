@@ -1,0 +1,9 @@
+version: "3"
+services:
+  cloudwatch_logs:
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - "SERVICES=logs"
+      - "DEFAULT-REGION=eu-west-1"
